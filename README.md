@@ -1,5 +1,17 @@
 ### Kong Plugin Dubbo Proxy
 
+插件安装
+
+```bash
+sudo luarocks install kong-plugin-dubbo-proxy-*.rockspec
+```
+
+插件启用需要修改 kong 的启动配置文件（`/etc/kong/kong.conf`）：
+
+```text
+plugins = bundled, dubbo-proxy
+```
+
 官方的 Dubbo Proxy 的请求规则为：
 
 ```text
