@@ -31,7 +31,7 @@ curl "http://192.168.33.1:9000/dubbo-registry-zookeeper-provider-sample/org.apac
 }'
 ```
 
-我更改了 Dubbo Proxy 的请求规则，将 application、interface、version、group 等原来在路由中填充的信息，放入 HTTP POST 请求 body 中，同时将这些 Dubbo 服务元信息放入插件配置中。
+我更改了 Dubbo Proxy 的请求规则（https://github.com/leopeng1995/dubbo-proxy），需要重新下载编译，将 application、interface、version、group 等原来在路由中填充的信息，放入 HTTP POST 请求 body 中，同时将这些 Dubbo 服务元信息放入插件配置中。
 
 启用 kong-plugin-dubbo-proxy：
 
